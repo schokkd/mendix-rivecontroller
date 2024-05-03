@@ -27,9 +27,6 @@ export function Canvas(props: CanvasProps): ReactElement {
     if (rivesource.status === 'loading' || statemachinename.status === 'loading') {
         return (<div />);
     }
-    
-    console.log(rivesource);
-    console.log(numberinputnames);
 
     const { rive, RiveComponent } = useRive({
         src: `${window.location.origin}/rest/riveservice/v1/resource/getfile?FileName=${rivesource.value}`,
