@@ -72,7 +72,6 @@ export function Canvas(props: CanvasProps): ReactElement {
         for (let [input, statemachinehook] of inputMap_boolean) {
         if (activeinputname_boolean.value === input && statemachinehook !== null) {
             statemachinehook.value = true;
-            //numLookInput!.value = 80;
         }
         if (activeinputname_boolean.value !== input && statemachinehook !== null) {
             statemachinehook.value = false;
@@ -102,7 +101,6 @@ export function Canvas(props: CanvasProps): ReactElement {
     }, [numberinputnames]);
 
     return (
-        <RiveComponent
-        />
+        <RiveComponent />
     );
 }
