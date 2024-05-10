@@ -5,17 +5,17 @@ import { Canvas } from "./components/Canvas";
 import "./ui/RiveCanvasTS.css";
 
 export function RiveCanvasTS(props: RiveCanvasTSContainerProps): ReactElement {
-    const { rivesource, statemachinename, activeinputname_boolean, booleaninputnames, triggerinputnames, numberinputnames, activeinputname_trigger, style } = props;
+    const { riveSource, stateMachineName, activeInputName_Boolean, booleanInputNames, triggerInputNames, numberInputNames, activeInputName_Trigger, style } = props;
 
     return (
         <Canvas
-            rivesource={rivesource}
-            statemachinename={statemachinename}
-            activeinputname_boolean={activeinputname_boolean}
-            booleaninputnames={booleaninputnames}
-            triggerinputnames={triggerinputnames}
-            numberinputnames={numberinputnames}
-            activeinputname_trigger={activeinputname_trigger}
+            riveSource={riveSource}
+            stateMachineName={stateMachineName}
+            activeInputName_Boolean={activeInputName_Boolean}
+            booleanInputNames={booleanInputNames}
+            triggerInputNames={triggerInputNames}
+            numberInputNames={numberInputNames}
+            activeInputName_Trigger={activeInputName_Trigger}
             className={props.class}
             style={style}
         />

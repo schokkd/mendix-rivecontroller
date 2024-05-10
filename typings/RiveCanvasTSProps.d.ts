@@ -7,30 +7,30 @@ import { CSSProperties } from "react";
 import { DynamicValue, EditableValue } from "mendix";
 import { Big } from "big.js";
 
-export interface BooleaninputnamesType {
-    booleaninput: string;
+export interface BooleanInputNamesType {
+    booleanInput: string;
 }
 
-export interface TriggerinputnamesType {
-    triggerinput: string;
+export interface TriggerInputNamesType {
+    triggerInput: string;
 }
 
-export interface NumberinputnamesType {
-    numberinput: string;
-    numberattribute: EditableValue<Big>;
+export interface NumberInputNamesType {
+    numberInput: string;
+    numberAttribute: EditableValue<Big>;
 }
 
-export interface BooleaninputnamesPreviewType {
-    booleaninput: string;
+export interface BooleanInputNamesPreviewType {
+    booleanInput: string;
 }
 
-export interface TriggerinputnamesPreviewType {
-    triggerinput: string;
+export interface TriggerInputNamesPreviewType {
+    triggerInput: string;
 }
 
-export interface NumberinputnamesPreviewType {
-    numberinput: string;
-    numberattribute: string;
+export interface NumberInputNamesPreviewType {
+    numberInput: string;
+    numberAttribute: string;
 }
 
 export interface RiveCanvasTSContainerProps {
@@ -38,13 +38,13 @@ export interface RiveCanvasTSContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    rivesource: DynamicValue<string>;
-    statemachinename: DynamicValue<string>;
-    booleaninputnames: BooleaninputnamesType[];
-    activeinputname_boolean: EditableValue<string>;
-    triggerinputnames: TriggerinputnamesType[];
-    activeinputname_trigger: EditableValue<string>;
-    numberinputnames: NumberinputnamesType[];
+    riveSource: DynamicValue<string>;
+    stateMachineName: DynamicValue<string>;
+    booleanInputNames: BooleanInputNamesType[];
+    activeInputName_Boolean: EditableValue<string>;
+    triggerInputNames: TriggerInputNamesType[];
+    activeInputName_Trigger: EditableValue<string>;
+    numberInputNames: NumberInputNamesType[];
 }
 
 export interface RiveCanvasTSPreviewProps {
@@ -56,11 +56,11 @@ export interface RiveCanvasTSPreviewProps {
     style: string;
     styleObject?: CSSProperties;
     readOnly: boolean;
-    rivesource: string;
-    statemachinename: string;
-    booleaninputnames: BooleaninputnamesPreviewType[];
-    activeinputname_boolean: string;
-    triggerinputnames: TriggerinputnamesPreviewType[];
-    activeinputname_trigger: string;
-    numberinputnames: NumberinputnamesPreviewType[];
+    riveSource: string;
+    stateMachineName: string;
+    booleanInputNames: BooleanInputNamesPreviewType[];
+    activeInputName_Boolean: string;
+    triggerInputNames: TriggerInputNamesPreviewType[];
+    activeInputName_Trigger: string;
+    numberInputNames: NumberInputNamesPreviewType[];
 }
