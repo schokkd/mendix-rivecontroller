@@ -10,8 +10,8 @@ export interface CanvasProps {
     booleanInputNames: BooleanInputNamesType[];
     triggerInputNames: TriggerInputNamesType[];
     numberInputNames: NumberInputNamesType[];
-    activeInputName_Boolean: EditableValue<string>
-    activeInputName_Trigger: EditableValue<string>
+    activeInputName_Boolean?: EditableValue<string>;
+    activeInputName_Trigger?: EditableValue<string>;
     defaultValue?: string;
     className?: string;
     style?: CSSProperties;
@@ -70,10 +70,10 @@ export function Canvas(props: CanvasProps): ReactElement {
 
     useEffect(() => {
         for (let [input, statemachinehook] of inputMap_boolean) {
-        if (activeInputName_Boolean.value === input && statemachinehook !== null) {
+        if (activeInputName_Boolean!.value === input && statemachinehook !== null) {
             statemachinehook.value = true;
         }
-        if (activeInputName_Boolean.value !== input && statemachinehook !== null) {
+        if (activeInputName_Boolean!.value !== input && statemachinehook !== null) {
             statemachinehook.value = false;
         }
         }
@@ -82,9 +82,9 @@ export function Canvas(props: CanvasProps): ReactElement {
 
     useEffect(() => {
         for (let [input, statemachinehook] of inputMap_trigger) {
-        if (activeInputName_Trigger.value === input && statemachinehook !== null) {
+        if (activeInputName_Trigger!.value === input && statemachinehook !== null) {
             statemachinehook.fire();
-            activeInputName_Trigger.setTextValue("");
+            activeInputName_Trigger!.setTextValue("");
         }
         }
 

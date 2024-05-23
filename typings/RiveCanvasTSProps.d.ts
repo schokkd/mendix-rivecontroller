@@ -41,9 +41,9 @@ export interface RiveCanvasTSContainerProps {
     riveSource: DynamicValue<string>;
     stateMachineName: DynamicValue<string>;
     booleanInputNames: BooleanInputNamesType[];
-    activeInputName_Boolean: EditableValue<string>;
+    activeInputName_Boolean?: EditableValue<string>;
     triggerInputNames: TriggerInputNamesType[];
-    activeInputName_Trigger: EditableValue<string>;
+    activeInputName_Trigger?: EditableValue<string>;
     numberInputNames: NumberInputNamesType[];
 }
 
