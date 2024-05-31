@@ -12,11 +12,11 @@
         <propertyGroup caption="General">
             <property key="riveSource" type="textTemplate">
                 <caption>Rive Name</caption>
-                <description>The File Name of the Rive you would like to render</description>
+                <description>The 'RiveName' of the Rive you would like to render</description>
             </property>
             <property key="stateMachineName" type="textTemplate">
                 <caption>State Machine Name</caption>
-                <description>The name of the rive's state machine</description>
+                <description>The name of the Rive's state machine</description>
             </property>
             <property key="booleanInputNames" type="object" isList="true" required="false">
                 <caption>Boolean Input Names</caption>
