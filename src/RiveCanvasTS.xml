@@ -31,7 +31,7 @@
                 </properties>
             </property>
             <property key="activeInputName_Boolean" type="attribute" required="false">
-                <caption>Active Input Name (Boolean)</caption>
+                <caption>Active Input (Boolean)</caption>
                 <description>Name of boolean state input you want to be active/true</description>
                 <attributeTypes>
                     <attributeType name="String"/>
@@ -50,7 +50,7 @@
                 </properties>
             </property>
             <property key="activeInputName_Trigger" type="attribute" required="false">
-                <caption>Active Input Name (Trigger)</caption>
+                <caption>Active Input (Trigger)</caption>
                 <description>Name of trigger state input you want to fire</description>
                 <attributeTypes>
                     <attributeType name="String"/>
