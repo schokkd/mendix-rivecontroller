@@ -2,7 +2,7 @@
 [Widget to display Rive Animations in a Mendix application. Typescript version.]
 
 ## Features
-[feature highlights]
+tried to fix the mendix 'require is not defined' error preventing all animations from loading and blocking the page from loading.
 
 ## Usage
 [step by step instructions]
