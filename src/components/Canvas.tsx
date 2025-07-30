@@ -16,13 +16,24 @@ export interface CanvasProps {
     className?: string;
     style?: CSSProperties;
     bootstrapStyle?: BootstrapStyle;
-    getRef?: (node: HTMLElement) => void;
+    getRef?: (node: HTMLDivElement | null) => void;
 }
 
 export type BootstrapStyle = "default" | "info" | "inverse" | "primary" | "danger" | "success" | "warning";
 
 export function Canvas(props: CanvasProps): ReactElement {
-    const { riveSource, stateMachineName, booleanInputNames, triggerInputNames, numberInputNames, activeInputName_Boolean, activeInputName_Trigger } = props;
+    const {
+        riveSource,
+        stateMachineName,
+        booleanInputNames,
+        triggerInputNames,
+        numberInputNames,
+        activeInputName_Boolean,
+        activeInputName_Trigger,
+        className,
+        style,
+        getRef
+    } = props;
 
     if (riveSource.status === 'loading' || stateMachineName.status === 'loading') {
         return (<div />);
@@ -101,6 +112,8 @@ export function Canvas(props: CanvasProps): ReactElement {
     }, [numberInputNames]);
 
     return (
-        <RiveComponent />
+        <div className={className} style={style} ref={getRef}>
+            <RiveComponent />
+        </div>
     );
 }
